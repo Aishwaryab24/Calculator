@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
+
+
+*{
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  width:100%;
+  background-color: #3B4664;
+  padding: 0px;
+  margin:0px;
+}
+
+
+.calculator{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+
+
+input{
+  height:100px;
+  width:30%;
+  background: #181F32;
+  border-radius: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight:900;
+  font-size: 45px;
+  text-align: right;
+  border: none;
+  color:#ffffff;
+  outline:none;
+}
+
+
+.grid-container {
+    width:30%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: #252D44;
+    padding: 30px 20px;
+    gap: 15px;
+    border-radius: 12px;
+    margin:20px;
+  }
+  .grid-item {
+    background-color:#EAE3DB;
+    border-radius: 12px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    border:none;
+    height:60px;
+  }
+
+  .del{
+    font-size: 24px;
+    background: #647299;
+    color:#ffffff;
+
+  }
+
+  .reset{
+    grid-column: 1/ span 2;
+    background: #647299;
+    color:#ffffff;
+    font-size: 24px;
+  }
+
+  .equal{
+    grid-column: 3/ span 2;
+    background: #D13F30;
+    color:#ffffff;
+  }
