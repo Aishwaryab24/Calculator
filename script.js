@@ -14,7 +14,13 @@ for(var i=0; i<numberOfButtons; i++){
                 document.querySelector("input").value=string;
             }
             else{
-                document.querySelector("input").value=string.toFixed(3);
+                let decimal=string.toString().split('.')[1];
+                if(decimal.length>3){
+                    document.querySelector("input").value=string.toFixed(3);
+                }else{
+                    document.querySelector("input").value=string;
+                }
+                
             }
             
         }
